@@ -1,0 +1,97 @@
+.choice-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size:1.8rem;
+    border: 0.1rem solid rgb(86,165,235,0.25);
+    background-color: white;
+    border-radius: 5%;
+}
+
+.choice-container:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86,185,235,0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+
+}
+
+.choice-prefix{
+    padding:1.5rem 2.5rem;
+    background-color: #56a5eb;
+    color: white;
+   
+}
+
+.choice-text{
+    padding:1.5rem;
+    width: 100%;
+}
+
+.correct{
+    background-color: #3fdc23;
+}
+
+.incorrect{
+    background-color: #e74353;
+}
+/* Hud */
+
+#hud{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.hud-prefix{
+    text-align: center;
+    font-size:2rem;
+    color:wheat;
+}
+.hud-main-text{
+    text-align: center;
+}
+#progressBar{
+    width: 20rem;
+    height:4rem;
+    border:0.3rem solid #56a5eb;
+    border-radius: 50px;
+    margin-top: 1.5rem;
+}
+
+#progress-bar-full{
+    height:3.5rem;
+    /* background-color: #56eb8f; */
+    border-radius: 50px;
+    width:0%;
+}
+
+#loader{
+  border:2.6rem solid rgb(255, 255, 255);
+  border-radius: 50%;
+  border-top: 1.6rem solid #ff0000;
+  width: 20rem;
+  height: 20rem;
+  animation: spin 0.6s linear infinite;
+  background-color: rgb(60, 58, 62);
+    
+}
+
+#loaderinner{
+    position:absolute;
+    border:1.6rem solid rgb(0, 149, 255);
+    border-radius: 50%;
+    border-top: 2.6rem solid #ff007b;
+    width: 9rem;
+    height: 9rem;
+    background-color: rgb(255, 157, 0);
+    animation: spin 0.09s linear infinite;
+}
+@keyframes spin {
+    0%{
+     transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
